@@ -8,6 +8,7 @@ import step2 from "../imgs/sell.svg";
 import step3 from "../imgs/buseniss.svg";
 import OpenCart from "./OpenCart";
 import { products } from "../data";
+import ProductItem from "./product-item/ProductItem";
 export default function HomePage() {
   // const [newProductsHome, setNewProducts] = useState([]);
   // const [mostOrderedProducts, setMostOrderedProducts] = useState([]);
@@ -45,7 +46,7 @@ export default function HomePage() {
   }, []);
   return (
     <div ref={myref}>
-      <div className="container-fluid text-white starter " id="land">
+      <div className=" " id="land">
         <img className="land-img" src={landImg} />
         <div className="row headers-holder">
           <h1
@@ -54,6 +55,7 @@ export default function HomePage() {
             data-aos-duration="2000"
           >
             Welcome to
+            <ProductItem />
           </h1>
           <h3
             className="text-center head "

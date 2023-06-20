@@ -3,7 +3,7 @@ import whiteLogo from '../imgs/white-logo.svg';
 
 export default function Navbar() {
 	return (
-		<nav className='navbar navbar-expand-sm navbar-dark bg-dark fixed-top'>
+		<nav className='navbar w3-red navbar-expand-sm navbar-dark bg-dark fixed-top'>
 			<div className='container-fluid'>
 				<a className='navbar-brand' href='/'>
 					<img className='logo' src={whiteLogo} />
