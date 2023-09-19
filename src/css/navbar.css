@@ -1,0 +1,14 @@
+.nav-logo {
+  width: 60px;
+}
+
+nav.w3-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-login__icon {
+    position: absolute;
+    right: 0%;
+}
