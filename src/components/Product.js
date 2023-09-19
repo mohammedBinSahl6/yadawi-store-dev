@@ -1,5 +1,6 @@
-import { useContext, useEffect, useRef, useState } from "react";
-import { Link, Route, Routes, useNavigate, useParams } from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { CartContext } from "../App";
 import AddedModal from "./AddedModal";
 import Load from "./Load";

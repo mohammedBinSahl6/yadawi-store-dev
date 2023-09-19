@@ -1,3 +1,4 @@
+import React from "react";
 const Contact = () => {
   return (
     <div className="container starter">
@@ -24,7 +25,6 @@ const Contact = () => {
               </div>
               <div className="formbold mb-5">
                 <label htmlFor="email" className="formbold-form-label">
-                  
                   Email Address
                 </label>
                 <input
@@ -37,7 +37,6 @@ const Contact = () => {
               </div>
               <div className="formbold mb-5">
                 <label htmlFor="message" className="formbold-form-label">
-                  
                   Message
                 </label>
                 <textarea
