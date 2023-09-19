@@ -1,6 +1,7 @@
-import { useContext, useEffect, useRef, useState } from "react";
+/* eslint-disable no-unused-vars */
+import { useEffect, useRef, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import product from "../imgs/product.jpg";
 import Load from "./Load";
 import landImg from "../imgs/land.svg";
 import step1 from "../imgs/craft.svg";
@@ -188,16 +189,16 @@ export default function HomePage() {
           {mostOrderedProducts.map((p) => (
             <div key={p.id} className="col-sm-4  f-holder">
               <Link className="empty-link" to={`/product/${p.id}`}>
-                <article class="card">
-                  <div class="temporary_text">
+                <article className="card">
+                  <div className="temporary_text">
                     <img className="pro-imge" src={p.image} />
                   </div>
-                  <div class="card_content">
-                    <span class="card_title">{p.title}</span>
-                    <span class="card_subtitle">
+                  <div className="card_content">
+                    <span className="card_title">{p.title}</span>
+                    <span className="card_subtitle">
                       Perfect Product for you coming from our Culture.
                     </span>
-                    <p class="card_description">{p.disc}</p>
+                    <p className="card_description">{p.disc}</p>
                   </div>
                 </article>
               </Link>
@@ -231,16 +232,16 @@ export default function HomePage() {
                 newProductsHome.map((p) => (
                   <div key={p.id} className="col-sm-4  f-holder">
                     <Link className="empty-link" to={`/product/${p.id}`}>
-                      <article class="card">
-                        <div class="temporary_text">
+                      <article className="card">
+                        <div className="temporary_text">
                           <img className="pro-imge" src={p.image} />
                         </div>
-                        <div class="card_content">
-                          <span class="card_title">{p.title}</span>
-                          <span class="card_subtitle">
+                        <div className="card_content">
+                          <span className="card_title">{p.title}</span>
+                          <span className="card_subtitle">
                             Perfect Product for you coming from our Culture.
                           </span>
-                          <p class="card_description">{p.disc}</p>
+                          <p className="card_description">{p.disc}</p>
                         </div>
                       </article>
                     </Link>

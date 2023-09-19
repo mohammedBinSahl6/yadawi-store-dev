@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { products } from "../data";
 import Load from "./Load";
@@ -45,23 +46,21 @@ export default function Shop() {
               <div className="row">
                 {newProducts.map((p) => (
                   <div key={p.id} className="col-sm-4  f-holder">
-                  <Link className="empty-link" to={`/product/${p.id}`}>
-                    <article class="card">
-                      <div class="temporary_text">
-                        <img className="pro-imge" src={p.image} />
-                      </div>
-                      <div class="card_content">
-                        <span class="card_title">{p.title}</span>
-                        <span class="card_subtitle">
-                          Perfect Product for you coming from our Culture.
-                        </span>
-                        <p class="card_description">
-                         {p.disc}
-                        </p>
-                      </div>
-                    </article>
-                  </Link>
-                </div>
+                    <Link className="empty-link" to={`/product/${p.id}`}>
+                      <article className="card">
+                        <div className="temporary_text">
+                          <img className="pro-imge" src={p.image} />
+                        </div>
+                        <div className="card_content">
+                          <span className="card_title">{p.title}</span>
+                          <span className="card_subtitle">
+                            Perfect Product for you coming from our Culture.
+                          </span>
+                          <p className="card_description">{p.disc}</p>
+                        </div>
+                      </article>
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>

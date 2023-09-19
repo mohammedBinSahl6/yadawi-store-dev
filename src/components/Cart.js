@@ -1,7 +1,6 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../App";
-import proda from "../imgs/product.jpg";
 
 export default function Cart() {
   const { cart, setCart } = useContext(CartContext);
@@ -77,7 +76,7 @@ export default function Cart() {
                         onClick={() => increace(cartP.id)}
                         disabled={cartP.count == cartP.qty}
                       >
-                        <i class="bx bx-plus-circle counter-btn"></i>
+                        <i className="bx bx-plus-circle counter-btn"></i>
                       </button>
                       <h4 className="display-6">{cartP.count}</h4>
                       <button
@@ -86,7 +85,7 @@ export default function Cart() {
                         disabled={cartP.count == 1}
                       >
                         {" "}
-                        <i class="bx bx-minus-circle counter-btn"></i>
+                        <i className="bx bx-minus-circle counter-btn"></i>
                       </button>
                     </div>
                   </div>
